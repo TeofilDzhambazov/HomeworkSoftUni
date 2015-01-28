@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+
+public class DecimalToHexadecimal {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int num = input.nextInt();
+		String Hex = Integer.toHexString(num);
+        System.out.printf(Hex.toUpperCase());
+
+	}
+
+}
