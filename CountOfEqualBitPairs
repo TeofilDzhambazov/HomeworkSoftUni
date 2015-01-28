@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+
+public class CountOfEqualBitPairs {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt(),cntr = 0;
+		String bit = Integer.toBinaryString(n);
+		 for (int i = 0; i < (bit.length()-1); i++) {
+             byte rBit =(byte)((n >> i) & 1);
+             byte lBit =(byte)((n >> (i + 1)) & 1);                      
+             if (rBit == lBit) {
+                     cntr++;
+             }
+     }
+		 System.out.println(cntr);
+	}
+
+}
