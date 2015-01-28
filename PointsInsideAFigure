@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+
+public class PointsInsideAFigure {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double pointA = input.nextDouble(),pointB = input.nextDouble();
+		if(pointA >= 12.5 && pointA <= 22.5 && pointB >= 6 && pointB <= 13.5)
+			System.out.println("Inside");
+		else if((pointA >= 12.5 && pointA <= 17.5 && pointB >= 6 && pointB <= 13.5) || (pointA >= 20 && pointA <= 22.5 && pointB >= 6 && pointB <= 13.5 ))
+			System.out.println("Inside");
+		else System.out.println("Outside");
+	}
+}
