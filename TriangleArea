@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+
+public class TriangleArea {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int Ax = input.nextInt(),Ay = input.nextInt(),Bx = input.nextInt(),By= input.nextInt(),Cx = input.nextInt(),Cy = input.nextInt();
+		if(Ax != Bx + 1 && Ay != By + 1)
+		{
+			int Area = (Ax * (By - Cy) + Bx * (Cy - Ay) + Cx * (Ay - By)) / 2;
+			System.out.println(Area);
+		}
+		else System.out.println(0);
+	}
+
+}
